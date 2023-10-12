@@ -1,0 +1,39 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+/*Styling*/
+
+.pri-text-col{
+    color: #ffff99 !important;
+}
+.sec-text-col{
+    color: #cc1616 !important;
+}
+
+.bgcolor{
+    background-color: #191919;
+}
+.bgcolor2{
+    background-color: #444444 !important;
+}
+
+.card-zoom {
+    transition: all ease-in-out;  
+}
+.card-zoom:hover {
+    transform: scale(1.09);
+    background-color: #cc1616 !important;
+}
+.card-zoom:hover h5{
+    color: #ffff99 !important;
+    cursor: pointer;
+}
+.z{
+    z-index: 100;
+}
+/*Swiper Style*/
+.swiper {
+    width: 100%;
+    height: auto;
+}
