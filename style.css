@@ -37,3 +37,71 @@
     width: 100%;
     height: auto;
 }
+/*Card effect Before*/
+.card-eff:hover::before{
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 50px;
+    height: 50px;
+    transition: all ease-in-out 0.3s;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    z-index: 50;
+    opacity: 0;
+}
+.card-eff:hover::before{
+    opacity: 1;
+}
+/*Card effect After*/
+.card-eff:hover::after{
+    content: "";
+    position: absolute;
+    bottom: 15px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    transition: all ease-in-out 0.3s;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    z-index: 50;
+}
+.card-eff:hover::after{
+    opacity: 1;
+}
+.member-shadow{
+    box-shadow: 0px 2px 15px rgba(18, 56,101, 0.8);
+}
+.img-icons{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    background-color: rgb(255, 255, 255, 0.852);
+    height: 40px;
+    opacity: 0;
+    transition: all ease-in-out 0.3s;
+}
+.img-parent{
+    position: relative;
+    
+}
+.member-shadow:hover .img-icons {
+    opacity: 1;
+}
+.service-icon {
+    transition: all ease-in-out;
+}
+.service-icon:hover {
+    transform: scale(1.09);
+}
+.service-icon:hover h5{
+    color: #2487ce !important;
+    cursor: pointer;
+}
+
